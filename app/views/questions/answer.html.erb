@@ -1,0 +1,11 @@
+<%# <form action="question" data-turbo="false">
+  <input type="text" name="question">
+  <input type="submit" value="Question!">
+</form> %>
+
+<p>You:</p>
+<p><%= "#{@question}" %></p>
+<p>Your coach:</p>
+<p><%= "#{@answer}" %></p>
+
+<%= link_to "Ask another question", ask_path %>
